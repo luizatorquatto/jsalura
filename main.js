@@ -1,9 +1,19 @@
-function pom()   {
-    alert("botão pom clicado");
-}
-document.querySelector.toString('.tecla_pom').onclik = pom;
+const listaDeTeclas = document.querySelectorAll('.tecla');
 
-function clap()   {
-    alert("botão clap clicado")
+function pom(){
+document.querySelector('#som_tecla_pom').play();
 }
-document.querySelector('.tecla_clap').onclik =  clap;
+function clap(){
+document.querySelector('#som_tecla_clap').play();
+}
+function tim(){
+document.querySelector('#som_tecla_tim').play();
+}
+function puff(){
+document.querySelector('#som_tecla_puff').play();
+}
+function tim(){
+document.querySelector('#som_tecla_tim').play();
+}
+
+listaDeTeclas[0].onclick = pom;
